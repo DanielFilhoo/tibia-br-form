@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TibiaBR</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Criação de Personagem</h3>
+        </div>
+        <!-- Corrigido: Nome da classe correta -->
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Crie o seu personagem em nosso servidor!</h1>
+                <p>
+                    Preencha os campos e marque as opções.
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Nome do personagem <span class="requeried-Field">*</span></label>
+                        <input type="text" 
+                               name="title" 
+                               id="title" 
+                               class="block" 
+                               placeholder="O nome do personagem"
+                               minlength="4"
+                               maxlength="12"
+                               required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="birth-date">Data de nascimento <span class="requeried-Field">*</span></label>
+                        <input type="date" 
+                               name="birth" 
+                               id="birth" 
+                               class="block" 
+                               placeholder="Data de Nascimento"
+                               required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="phone-number">Telefone <span class="requeried-Field">*</span></label>
+                        <input type="number" 
+                               name="phone" 
+                               id="phone" 
+                               class="block" 
+                               placeholder="Digite o número de telefone"
+                               minlength="8"
+                               maxlength="9"
+                               required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="cpf-number">CPF <span class="requeried-Field">*</span></label>
+                        <input type="number" 
+                               name="cpf" 
+                               id="cpf" 
+                               class="block" 
+                               placeholder="Número do cpf"
+                               minlength="11"
+                               maxlength="11"
+                               required />
+
+                    <div class="box-input">
+                        <label for="cpf-number">E-mail <span class="requeried-Field">*</span></label>
+                        <input type="email" 
+                                name="email" 
+                                id="email" 
+                                class="block" 
+                                placeholder="Digite seu e-mail"
+                                required />
+                            
+                    <div class="box-input">
+                        <label for="cpf-number">Senha <span class="requeried-Field">*</span></label>
+                        <input type="password" 
+                                name="password" 
+                                id="password" 
+                                class="block" 
+                                placeholder="Crie sua Senha"
+                                minlength="8"
+                                maxlength="14"
+                                required />
+
+                    <div class="box-input">
+                        <p>Selecione o Servidor<span class="requeried-Field">*</span></p>
+                        <input type="radio" id="tenebra" name="server" />
+                        <label for="tenebra">Tenebra</label>
+                        <input type="radio" id="dolera" name="server" />
+                        <label for="dolera">Dolera</label>
+                    </div>
+
+                    <div class="gender">
+                        <p>Sexo do personagem<span class="requeried-Field">*</span></p>
+                        <input type="radio" id="male" name="male" />
+                        <label for="male">Masculino</label>
+                        <input type="radio" id="female" name="female" />
+                        <label for="female">Feminino</label>
+                    </div>
+
+                    <div class="box-input">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Aceito os <a href="#">termos de uso</a> e o <a href="#">contrato</a>.</label>
+                    </div>
+                               
+                    <input type="submit" value="Enviar" class="btn-submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #101010;
+    background-image: url('../img/img.jpg');
+    background-size: cover; 
+    background-position: top center; 
+    color: #f1e8d8;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffd700;
+}
+
+p, label {
+    color: #f1e8d8;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #505050;
+    color: #f1e8d8;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.btn-submit {
+    background-color: #3a3a3a;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #505050;
+}
+
+header {
+    background-color: #202020;
+    padding: 20px;
+    border-bottom: 2px solid #ffd700;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    color: #ffd700;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid #505050;
+    border-radius: 10px;
+}
+
+.form-header {
+    border-bottom: 2px solid #ffd700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.gender-select {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.gender-select li {
+    list-style: none;
+    display: inline-block;
+}
+
+.required-field {
+    color: #ff0000;
+    font-weight: bold;
+}
